@@ -1,0 +1,36 @@
+{
+  "StartPoint": {
+    "X": 60.0,
+    "Y": 60.0,
+    "IsDefault": false
+  },
+  "EndPoint": {
+    "X": 120.0,
+    "Y": 120.0,
+    "IsDefault": false
+  },
+  "Name": "test1",
+  "StrokeThickness": 3,
+  "Stroke": {
+    "A": 255,
+    "R": 0,
+    "G": 0,
+    "B": 0
+  },
+  "RotateAngle": 45,
+  "RotateCenter": {
+    "X": 10.0,
+    "Y": 10.0,
+    "IsDefault": false
+  },
+  "Scale": {
+    "X": 1.0,
+    "Y": 1.0,
+    "IsDefault": false
+  },
+  "Skew": {
+    "X": 15.0,
+    "Y": 15.0,
+    "IsDefault": false
+  }
+}

@@ -25,13 +25,13 @@
 			<Menu Name="menuExport" DockPanel.Dock="Top">
 				<MenuItem Header="_Экспортировать">
 					<MenuItem Header="_XML" Click="OnExportMenuClickXML"/>
-					<MenuItem Header="_JSON"/>
+					<MenuItem Header="_JSON" Click="OnExportMenuClickJSON"/>
 					<Separator/>
 					<MenuItem Header="_Закрыть"/>
 				</MenuItem>
 				<MenuItem Header="_Импортировать">
 					<MenuItem Header="_XML" Click="OnImportMenuClickXML"/>
-					<MenuItem Header="_JSON"/>
+					<MenuItem Header="_JSON" Click="OnImportMenuClickJSON"/>
 					<Separator/>
 					<MenuItem Header="_Закрыть"/>
 				</MenuItem>

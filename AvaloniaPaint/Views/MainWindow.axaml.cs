@@ -54,5 +54,47 @@ namespace AvaloniaPaint.Views
                 }
             }
         }
+        private async void OnExportMenuClickJSON(object sender, RoutedEventArgs eventArgs)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.Filters.Add(
+                new FileDialogFilter
+                {
+                    Name = "JSON files",
+                    Extensions = new string[] { "json" }.ToList()
+                });
+
+            string? path = await saveFileDialog.ShowAsync(this);
+
+            if (path != null)
+            {
+                if (this.DataContext is MainWindowViewModel dataContext)
+                {
+                    dataContext.SaveFigures(path);
+                }
+            }
+        }
+        private async void OnImportMenuClickJSON(object sender, RoutedEventArgs eventArgs)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            openFileDialog.Filters.Add(
+                new FileDialogFilter
+                {
+                    Name = "JSON files",
+                    Extensions = new string[] { "json" }.ToList()
+                });
+
+            string[]? path = await openFileDialog.ShowAsync(this);
+
+            if (path != null)
+            {
+                if (this.DataContext is MainWindowViewModel dataContext)
+                {
+                    dataContext.LoadFigures(path[0]);
+                }
+            }
+        }
     }
 }

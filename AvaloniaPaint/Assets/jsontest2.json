@@ -1,0 +1,282 @@
+[
+  {
+    "StartPoint": {
+      "X": 60.0,
+      "Y": 60.0,
+      "IsDefault": false
+    },
+    "EndPoint": {
+      "X": 120.0,
+      "Y": 120.0,
+      "IsDefault": false
+    },
+    "Name": "test1",
+    "StrokeThickness": 3,
+    "Stroke": {
+      "A": 255,
+      "R": 0,
+      "G": 0,
+      "B": 0
+    },
+    "RotateAngle": 45,
+    "RotateCenter": {
+      "X": 10.0,
+      "Y": 10.0,
+      "IsDefault": false
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "IsDefault": false
+    },
+    "Skew": {
+      "X": 15.0,
+      "Y": 15.0,
+      "IsDefault": false
+    }
+  },
+  {
+    "StartPoint": {
+      "X": 120.0,
+      "Y": 120.0,
+      "IsDefault": false
+    },
+    "EndPoint": {
+      "X": 180.0,
+      "Y": 180.0,
+      "IsDefault": false
+    },
+    "Name": "test1.1",
+    "StrokeThickness": 3,
+    "Stroke": {
+      "A": 255,
+      "R": 0,
+      "G": 0,
+      "B": 0
+    },
+    "RotateAngle": 45,
+    "RotateCenter": {
+      "X": 10.0,
+      "Y": 10.0,
+      "IsDefault": false
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "IsDefault": false
+    },
+    "Skew": {
+      "X": -10.0,
+      "Y": 10.0,
+      "IsDefault": false
+    }
+  },
+  {
+    "Points": [
+      {
+        "X": 80.0,
+        "Y": 80.0,
+        "IsDefault": false
+      },
+      {
+        "X": 100.0,
+        "Y": 80.0,
+        "IsDefault": false
+      },
+      {
+        "X": 120.0,
+        "Y": 100.0,
+        "IsDefault": false
+      }
+    ],
+    "Name": "test2",
+    "StrokeThickness": 11,
+    "Stroke": {
+      "A": 255,
+      "R": 138,
+      "G": 43,
+      "B": 226
+    },
+    "RotateAngle": 0,
+    "RotateCenter": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "IsDefault": false
+    },
+    "Skew": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    }
+  },
+  {
+    "Points": [
+      {
+        "X": 300.0,
+        "Y": 300.0,
+        "IsDefault": false
+      },
+      {
+        "X": 360.0,
+        "Y": 300.0,
+        "IsDefault": false
+      },
+      {
+        "X": 370.0,
+        "Y": 370.0,
+        "IsDefault": false
+      },
+      {
+        "X": 300.0,
+        "Y": 400.0,
+        "IsDefault": false
+      }
+    ],
+    "FillColor": {
+      "A": 255,
+      "R": 127,
+      "G": 255,
+      "B": 212
+    },
+    "Name": "test3",
+    "StrokeThickness": 5,
+    "Stroke": {
+      "A": 255,
+      "R": 255,
+      "G": 228,
+      "B": 196
+    },
+    "RotateAngle": 0,
+    "RotateCenter": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "IsDefault": false
+    },
+    "Skew": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    }
+  },
+  {
+    "Height": 69,
+    "Width": 120,
+    "StartPoint": {
+      "X": 300.0,
+      "Y": 60.0,
+      "IsDefault": false
+    },
+    "FillColor": {
+      "A": 255,
+      "R": 0,
+      "G": 0,
+      "B": 255
+    },
+    "Name": "test4",
+    "StrokeThickness": 4,
+    "Stroke": {
+      "A": 255,
+      "R": 138,
+      "G": 43,
+      "B": 226
+    },
+    "RotateAngle": 0,
+    "RotateCenter": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "IsDefault": false
+    },
+    "Skew": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    }
+  },
+  {
+    "Height": 60,
+    "Width": 120,
+    "StartPoint": {
+      "X": 500.0,
+      "Y": 60.0,
+      "IsDefault": false
+    },
+    "FillColor": {
+      "A": 255,
+      "R": 95,
+      "G": 158,
+      "B": 160
+    },
+    "Name": "test5",
+    "StrokeThickness": 14,
+    "Stroke": {
+      "A": 255,
+      "R": 127,
+      "G": 255,
+      "B": 0
+    },
+    "RotateAngle": 45,
+    "RotateCenter": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "IsDefault": false
+    },
+    "Skew": {
+      "X": 0.0,
+      "Y": 0.0,
+      "IsDefault": true
+    }
+  },
+  {
+    "Data": "M 200,200 c 0,0 50,0 50,-50 c 0,0 50,0 50,50 h -50 v 50 l -50,-50 Z",
+    "FillColor": {
+      "A": 255,
+      "R": 255,
+      "G": 127,
+      "B": 80
+    },
+    "Name": "test6",
+    "StrokeThickness": 12,
+    "Stroke": {
+      "A": 255,
+      "R": 220,
+      "G": 20,
+      "B": 60
+    },
+    "RotateAngle": 45,
+    "RotateCenter": {
+      "X": 12.0,
+      "Y": 12.0,
+      "IsDefault": false
+    },
+    "Scale": {
+      "X": 2.0,
+      "Y": 2.0,
+      "IsDefault": false
+    },
+    "Skew": {
+      "X": 15.0,
+      "Y": 15.0,
+      "IsDefault": false
+    }
+  }
+]

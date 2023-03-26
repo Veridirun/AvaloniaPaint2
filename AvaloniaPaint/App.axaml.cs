@@ -25,6 +25,7 @@ namespace AvaloniaPaint
                         SaverLoaderFactoryCollection = new ISaverLoaderFactory[]
                         {
                             new XMLSaverLoaderFactory(),
+                            new JSONSaverLoaderFactory(),
                         }
                     }
                 };
