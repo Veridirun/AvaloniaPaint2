@@ -11,20 +11,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using JsonSerializer = Newtonsoft.Json.JsonSerializer;
 
-/* var tmpfigure = figure as PaintLine;
-JObject rss =
-    new JObject(
-        new JProperty("Name", tmpfigure.Name),
-        new JProperty("StrokeThickness", tmpfigure.StrokeThickness),
-        new JProperty("Stroke", tmpfigure.Stroke),
-        new JProperty("RotateAngle", tmpfigure.RotateAngle),
-        new JProperty("RotateCenter", tmpfigure.RotateCenter),
-        new JProperty("Scale", tmpfigure.Scale),
-        new JProperty("Skew", tmpfigure.Skew),
-        new JProperty("StartPoint", tmpfigure.StartPoint),
-        new JProperty("EndPoint", tmpfigure.EndPoint)
-        );
-*/
 
 namespace AvaloniaPaint.Models.Serializer
 {
@@ -35,47 +21,11 @@ namespace AvaloniaPaint.Models.Serializer
             JsonSerializer serializer = new JsonSerializer();
             serializer.NullValueHandling = NullValueHandling.Ignore;
             string output = string.Empty;
-            output = JsonConvert.SerializeObject(figures, Formatting.Indented);
-            /*
-            foreach (PaintBaseFigure figure in figures)
-            {
-                if (figure is PaintLine) {
-                    var tmpfigure = figure as PaintLine;
-                    output += JsonConvert.SerializeObject(figure, Formatting.Indented);
-                    output += '\n';
-                }
-                if (figure is PaintPolyline)
-                {
-                    var tmpfigure = figure as PaintPolyline;
-                    output += JsonConvert.SerializeObject(figure, Formatting.Indented);
-                    output += '\n';
-                }
-                if (figure is PaintPolygon)
-                {
-                    var tmpfigure = figure as PaintPolygon;
-                    output += JsonConvert.SerializeObject(figure, Formatting.Indented);
-                    output += '\n';
-                }
-                if (figure is PaintEllipse)
-                {
-                    var tmpfigure = figure as PaintEllipse;
-                    output += JsonConvert.SerializeObject(figure, Formatting.Indented);
-                    output += '\n';
-                }
-                if (figure is PaintRectangle)
-                {
-                    var tmpfigure = figure as PaintRectangle;
-                    output += JsonConvert.SerializeObject(figure, Formatting.Indented);
-                    output += '\n';
-                }
-                if (figure is PaintPath)
-                {
-                    var tmpfigure = figure as PaintPath;
-                    output += JsonConvert.SerializeObject(figure, Formatting.Indented);
-                    output += '\n';
-                }
-            }
-            */
+            output = JsonConvert.SerializeObject(figures.ToList(), 
+                new JsonSerializerSettings { 
+                    TypeNameHandling = TypeNameHandling.All,
+                    Formatting = Formatting.Indented });
+            
             using (StreamWriter writer = new StreamWriter(path))
             {
                 writer.WriteLine(output);

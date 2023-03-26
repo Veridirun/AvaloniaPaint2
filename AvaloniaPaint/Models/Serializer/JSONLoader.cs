@@ -16,14 +16,15 @@ namespace AvaloniaPaint.Models.Serializer
         {
             var figuresJsontext = File.ReadAllText(path);
 
-            //bad read
-            //ObservableCollection<PaintBaseFigure> figuresList = new ObservableCollection<PaintBaseFigure>() { JsonConvert.DeserializeObject<PaintBaseFigure>(figuresJsontext) };
+            var objects = JsonConvert.DeserializeObject<List<PaintBaseFigure>>(figuresJsontext,
+                    new JsonSerializerSettings
+                    {
+                        TypeNameHandling = TypeNameHandling.All,
+                        Formatting = Formatting.Indented
+                    });
+            ObservableCollection <PaintBaseFigure> figuresList =
+                new ObservableCollection<PaintBaseFigure>(objects);
 
-            //can read one line
-            //ObservableCollection<PaintBaseFigure> figuresList = new ObservableCollection<PaintBaseFigure>() { JsonConvert.DeserializeObject<PaintLine>(figuresJsontext) };
-
-            JArray figuresJArray = JArray.Parse(figuresJsontext);
-            ObservableCollection<PaintBaseFigure> figuresList = figuresJArray.ToObject<ObservableCollection<PaintBaseFigure>>();
 
             return figuresList;
         }
